@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swathi C — Computer Science Engineer</title>
+<meta name="description" content="Portfolio of Swathi C — Computer Science & Engineering student specializing in Machine Learning and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Animated background canvas (neural network mesh) -->
+<canvas id="mesh-bg"></canvas>
+
+<!-- Custom cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo"><span class="bracket">&lt;</span>Swathi C<span class="bracket">/&gt;</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" data-tab="01">Home</a></li>
+      <li><a href="#about" data-tab="02">About</a></li>
+      <li><a href="#skills" data-tab="03">Skills</a></li>
+      <li><a href="#education" data-tab="04">Education</a></li>
+      <li><a href="#projects" data-tab="05">Projects</a></li>
+      <li><a href="#certificates" data-tab="06">Certificates</a></li>
+      <li><a href="#achievements" data-tab="07">Achievements</a></li>
+      <li><a href="#contact" data-tab="08">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow"><span class="dot-blink"></span> compiling_potential.exe — build successful</p>
+    <h1 class="hero-title">
+      <span class="hero-title-line">Swathi</span>
+      <span class="hero-title-line hero-title-accent">C</span>
+    </h1>
+    <p class="hero-role">
+      <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+    </p>
+    <p class="hero-desc">
+      Computer Science &amp; Engineering student building toward
+      Machine Learning, Explainable AI, and software that explains its own thinking.
+      Based in Kovilpatti, Tamil Nadu.
+    </p>
+    <div class="hero-actions">
+      <a href="#certificates" class="btn btn-primary">View Certificates</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-count="7">0</span><span class="stat-label">Certifications</span></div>
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Projects Built</span></div>
+      <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Events Attended</span></div>
+    </div>
+  </div>
+  <div class="hero-portrait">
+    <div class="portrait-ring"></div>
+    <img src="assets/img/profile.jpg" alt="Portrait of Swathi C" class="portrait-img">
+    <div class="portrait-chip chip-1">Python</div>
+    <div class="portrait-chip chip-2">Machine Learning</div>
+    <div class="portrait-chip chip-3">Java</div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span>scroll</span>
+    <svg width="14" height="20" viewBox="0 0 14 20"><path d="M7 1v17M1 12l6 6 6-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</header>
+
+<main>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-head reveal">
+    <span class="tab-index">// 02</span>
+    <h2 class="section-title">About</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p class="about-lead">
+        I'm a Computer Science &amp; Engineering undergraduate with a strong pull toward
+        software development, machine learning, and artificial intelligence —
+        the kind of curiosity that turns a class assignment into a weekend rabbit hole.
+      </p>
+      <p>
+        My recent work centers on <strong>Explainable AI</strong>: building models that don't
+        just predict, but justify — most recently applying SHAP-based interpretability to
+        liver disease risk prediction during a research internship at Manipal Institute of
+        Technology. Outside of research, I've been steadily stacking up NPTEL and industry
+        certifications across cloud computing, IoT, deep learning, and Python, while
+        picking up wins (and good losses) at coding events and hackathons across Tamil Nadu.
+      </p>
+      <div class="about-langs">
+        <span class="lang-pill">English</span>
+        <span class="lang-pill">Tamil</span>
+      </div>
+    </div>
+    <div class="about-card reveal">
+      <div class="card-row"><span class="card-key">Location</span><span class="card-val">Kovilpatti, Tamil Nadu</span></div>
+      <div class="card-row"><span class="card-key">Degree</span><span class="card-val">B.E. CSE (Pursuing)</span></div>
+      <div class="card-row"><span class="card-key">Focus</span><span class="card-val">ML / Explainable AI</span></div>
+      <div class="card-row"><span class="card-key">Email</span><span class="card-val">swathic2499@gmail.com</span></div>
+      <div class="card-row"><span class="card-key">Phone</span><span class="card-val">+91 86674 80468</span></div>
+      <a href="https://github.com/Swathi-CSE-28" target="_blank" rel="noopener" class="card-row card-link">
+        <span class="card-key">GitHub</span><span class="card-val">Swathi-CSE-28 ↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/swathi-c-925b3232b" target="_blank" rel="noopener" class="card-row card-link">
+        <span class="card-key">LinkedIn</span><span class="card-val">swathi-c-925b3232b ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="section-head reveal">
+    <span class="tab-index">// 03</span>
+    <h2 class="section-title">Skills</h2>
+  </div>
+
+  <div class="skills-wrap reveal">
+    <h3 class="skills-subhead">Languages &amp; Tools</h3>
+    <div class="skill-bars">
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span>Python</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span>Java</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span>C++</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span>Machine Learning Basics</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-tags-wrap reveal">
+    <h3 class="skills-subhead">Core Strengths</h3>
+    <div class="tag-cloud">
+      <span class="skill-tag">Problem Solving</span>
+      <span class="skill-tag">Communication Skills</span>
+      <span class="skill-tag">Teamwork &amp; Collaboration</span>
+      <span class="skill-tag">Critical Thinking</span>
+      <span class="skill-tag">Time Management</span>
+      <span class="skill-tag">Adaptability</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="section-head reveal">
+    <span class="tab-index">// 04</span>
+    <h2 class="section-title">Education</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2024 — Present</span>
+        <h3>Bachelor of Computer Science &amp; Engineering</h3>
+        <p class="timeline-sub">Pursuing</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2023 — 2024</span>
+        <h3>Higher Secondary Certificate (HSC)</h3>
+        <p class="timeline-sub">St. Pauls Matriculation Higher Secondary School</p>
+        <span class="score-pill">85.8%</span>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2021 — 2022</span>
+        <h3>Secondary School Leaving Certificate (SSLC)</h3>
+        <p class="timeline-sub">St. Pauls Matriculation Higher Secondary School</p>
+        <span class="score-pill">93.6%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="internship-banner reveal">
+    <div class="internship-banner-icon">◆</div>
+    <div>
+      <h3>Research Internship — Manipal Institute of Technology</h3>
+      <p>Explainable AI for Bilirubin-Based Liver Disease Risk Prediction Using Machine Learning, May–June 2026.
+      Built and compared Logistic Regression, Decision Tree, Random Forest, SVM and XGBoost models on the
+      Indian Liver Patient Dataset, then applied SHAP-based explainability to interpret predictions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section-alt" id="projects">
+  <div class="section-head reveal">
+    <span class="tab-index">// 05</span>
+    <h2 class="section-title">Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+    <article class="project-card reveal">
+      <div class="project-card-top">
+        <span class="project-lang">C++</span>
+      </div>
+      <h3>Online Bookstore Management System</h3>
+      <p>A bookstore management application handling book inventory, ordering, and customer details efficiently.</p>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-card-top">
+        <span class="project-lang">Design Thinking</span>
+      </div>
+      <h3>Hospital Management System</h3>
+      <p>A hospital management solution designed to improve patient workflow and management processes.</p>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-card-top">
+        <span class="project-lang">Java</span>
+      </div>
+      <h3>Fertilizer Booking System</h3>
+      <p>A Java-based booking system built for streamlined fertilizer ordering and management.</p>
+    </article>
+
+    <article class="project-card project-card-featured reveal">
+      <div class="project-card-top">
+        <span class="project-lang project-lang-featured">Python · ML · XAI</span>
+      </div>
+      <h3>Explainable AI for Liver Disease Risk Prediction</h3>
+      <p>Research internship project predicting liver disease risk from bilirubin and clinical parameters
+      (Indian Liver Patient Dataset). Covered preprocessing, feature engineering, five comparative ML models,
+      and SHAP-based interpretability analysis.</p>
+      <ul class="project-feat-list">
+        <li>Logistic Regression · Decision Tree · Random Forest · SVM · XGBoost</li>
+        <li>Evaluation via Accuracy, Precision, Recall, F1, ROC-AUC</li>
+        <li>SHAP explainability for feature-level interpretation</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section class="section" id="certificates">
+  <div class="section-head reveal">
+    <span class="tab-index">// 06</span>
+    <h2 class="section-title">Certificates</h2>
+    <p class="section-sub">Tap any certificate to view it full-size.</p>
+  </div>
+
+  <div class="filter-row reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nptel">NPTEL</button>
+    <button class="filter-btn" data-filter="industry">Industry</button>
+    <button class="filter-btn" data-filter="internship">Internship</button>
+  </div>
+
+  <div class="cert-grid">
+
+    <figure class="cert-card reveal" data-filter="internship" data-full="assets/certs/internship.jpg">
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/internship.jpg" alt="Internship Completion Certificate — Manipal Institute of Technology" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>Research Internship Completion</h3>
+        <p>Manipal Institute of Technology · 2026</p>
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card reveal" data-filter="nptel" data-full="assets/certs/cloud_computing.jpg">
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/cloud_computing.jpg" alt="NPTEL Cloud Computing Certificate" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>Cloud Computing</h3>
+        <p>NPTEL · IIT Kharagpur · 2025</p>
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card reveal" data-filter="nptel" data-full="assets/certs/iot.jpg">
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/iot.jpg" alt="NPTEL Introduction to Internet of Things Certificate" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>Introduction to Internet of Things</h3>
+        <p>NPTEL · IIT Kharagpur · Elite · 2025</p>
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card reveal" data-filter="nptel" data-full="assets/certs/joy_of_python.jpg">
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/joy_of_python.jpg" alt="NPTEL The Joy of Computing using Python Certificate" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>The Joy of Computing using Python</h3>
+        <p>NPTEL · IIT Madras · 2025</p>
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card reveal" data-filter="industry" data-full="assets/certs/ml_beginner.jpg">
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/ml_beginner.jpg" alt="Machine Learning Beginner Certificate — Infosys Springboard" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>Machine Learning Beginner</h3>
+        <p>Infosys Springboard · 2025</p>
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card reveal" data-filter="industry" data-full="assets/certs/ml_fundamentals.jpg">
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/ml_fundamentals.jpg" alt="Machine Learning Fundamentals Certificate — Infosys Springboard" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>Machine Learning Fundamentals</h3>
+        <p>Infosys Springboard · 2025</p>
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card reveal" data-filter="industry" data-full="assets/certs/reccsar.jpg">
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/reccsar.jpg" alt="Hands-on Python Certificate — Reccsar Pvt Ltd" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>Hands-on Python: Learn by Doing</h3>
+        <p>Reccsar Pvt. Ltd · 2025</p>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="section section-alt" id="achievements">
+  <div class="section-head reveal">
+    <span class="tab-index">// 07</span>
+    <h2 class="section-title">Participation &amp; Achievements</h2>
+  </div>
+
+  <div class="achieve-grid">
+    <figure class="achieve-card achieve-highlight reveal" data-full="assets/certs/botathon.jpg">
+      <div class="achieve-ribbon">2nd Prize</div>
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/botathon.jpg" alt="Botathon 6H Certificate — National Engineering College" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>8-Hour Botathon — College Website GuideBot</h3>
+        <p>National Engineering College · Sept 2025</p>
+      </figcaption>
+    </figure>
+
+    <figure class="achieve-card reveal" data-full="assets/certs/cit_event.jpg">
+      <div class="cert-thumb-wrap">
+        <img src="assets/certs/cit_event.jpg" alt="CodeCraze Certificate — Coimbatore Institute of Technology" loading="lazy">
+        <div class="cert-overlay"><span>View Certificate</span></div>
+      </div>
+      <figcaption>
+        <h3>Coding Event — CodeCraze</h3>
+        <p>Mechnotron 2K25 · Coimbatore Institute of Technology</p>
+      </figcaption>
+    </figure>
+
+    <figure class="achieve-card achieve-text-card reveal">
+      <div class="achieve-text-inner">
+        <span class="achieve-text-icon">★</span>
+        <h3>Bugsmash, Quizbyte</h3>
+        <p class="achieve-text-event">Cybercrest 2K26 — National Level Technical Symposium</p>
+        <p class="achieve-text-org">Dept. of Computer Applications, B.S. Abdur Rahman Crescent
+        Institute of Science &amp; Technology, Vandalur, Chennai · 11 Feb 2026</p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact-section" id="contact">
+  <div class="section-head reveal">
+    <span class="tab-index">// 08</span>
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-sub">Open to internships, collaborations, and interesting problems.</p>
+  </div>
+
+  <div class="contact-grid reveal">
+    <a href="mailto:swathic2499@gmail.com" class="contact-card">
+      <span class="contact-icon">✉</span>
+      <span class="contact-label">Email</span>
+      <span class="contact-val">swathic2499@gmail.com</span>
+    </a>
+    <a href="tel:+918667480468" class="contact-card">
+      <span class="contact-icon">☎</span>
+      <span class="contact-label">Phone</span>
+      <span class="contact-val">+91 86674 80468</span>
+    </a>
+    <a href="https://github.com/Swathi-CSE-28" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-icon">⌥</span>
+      <span class="contact-label">GitHub</span>
+      <span class="contact-val">Swathi-CSE-28</span>
+    </a>
+    <a href="https://www.linkedin.com/in/swathi-c-925b3232b" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-icon">in</span>
+      <span class="contact-label">LinkedIn</span>
+      <span class="contact-val">swathi-c-925b3232b</span>
+    </a>
+    <div class="contact-card contact-card-static">
+      <span class="contact-icon">⌖</span>
+      <span class="contact-label">Location</span>
+      <span class="contact-val">2499/6, Indranagar, Kovilpatti</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built with <span class="heart">♥</span> — Swathi C, 2026</p>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img src="" alt="" id="lightboxImg" class="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
